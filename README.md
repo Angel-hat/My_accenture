@@ -1,5 +1,5 @@
 # VulFi v3.0
-
+Hi
 ## Introduction 
 
 The VulFi (Vulnerability Finder) tool is a plugin to IDA Pro which can be used to assist during bug hunting in binaries. Its main objective is to provide a single view with all cross-references to the most interesting functions (such as `strcpy`, `sprintf`, `system`, etc.). For cases where a Hexrays decompiler can be used, it will attempt to rule out calls to these functions which are not interesting from a vulnerability research perspective (think something like `strcpy(dst,"Hello World!")`). Without the decompiler, the rules are much simpler (to not depend on architecture) and thus only rule out the most obvious cases.
